@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import UserCard from './UserCard'
 import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './UserList.css'
