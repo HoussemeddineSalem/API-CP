@@ -3,7 +3,7 @@ import axios from 'axios';
 import UserCard from './UserCard'
 import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './UserList.css'
 
 
 function UserList() {
@@ -25,23 +25,26 @@ function UserList() {
             {
                 user.map(el =>
                     <Carousel.Item>
-
-                        <Carousel.Caption>
-                            <ul>
-                                <li>{el.name}</li>
-                                <li>{el.username}</li>
-                                    <li>{el.email}</li>
-                            </ul>
+                        <img
+                            className="d-block w-100"
+                            src="https://www.pngmagic.com/product_images/dusty-blue-background-images-free-download-pngmagic.jpg"
+                            alt={el.name}
+                        />
+                        <Carousel.Caption className="caroussel_caption__styling">
+                            <div className="list__styling">
+                                <p><span>Name :</span>{el.name}</p>
+                                <p><span>Username :</span>{el.username}</p>
+                                <p><span>Email :</span>{el.email}</p>
+                                <hr />
+                                <div className="list_adress__styling" >
+                                    <p><span>Street :</span>{el.address.street}</p>
+                                    <p><span>Suite :</span>{el.address.suite}</p>
+                                    <p><span>City :</span>{el.address.city}</p>
+                                </div>
+                            </div>
 
                         </Carousel.Caption>
-                       
-                            <img
-                                className="d-block w-100"
-                                src="holder.js/800x400?text=First slide&bg=373940"
-                                alt={el.name}
-                            />
-    
-                       
+
                     </Carousel.Item>)
             }
 
