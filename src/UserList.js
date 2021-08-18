@@ -24,7 +24,7 @@ function UserList() {
 
             {
                 user.map(el =>
-                    <Carousel.Item>
+                    <Carousel.Item key={el.id}>
                         <img
                             className="d-block w-100"
                             src="https://www.pngmagic.com/product_images/dusty-blue-background-images-free-download-pngmagic.jpg"
