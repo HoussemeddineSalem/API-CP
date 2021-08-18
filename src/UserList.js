@@ -32,14 +32,14 @@ function UserList() {
                         />
                         <Carousel.Caption className="caroussel_caption__styling">
                             <div className="list__styling">
-                                <p><span>Name :</span>{el.name}</p>
-                                <p><span>Username :</span>{el.username}</p>
-                                <p><span>Email :</span>{el.email}</p>
+                                <p><span className="prefix_styling">Name : </span>{el.name}</p>
+                                <p><span className="prefix_styling">Username : </span>{el.username}</p>
+                                <p><span className="prefix_styling">Email : </span>{el.email}</p>
                                 <hr />
                                 <div className="list_adress__styling" >
-                                    <p><span>Street :</span>{el.address.street}</p>
-                                    <p><span>Suite :</span>{el.address.suite}</p>
-                                    <p><span>City :</span>{el.address.city}</p>
+                                    <p><span className="prefix_styling">Street : </span>{el.address.street}</p>
+                                    <p><span className="prefix_styling">Suite : </span>{el.address.suite}</p>
+                                    <p><span className="prefix_styling">City : </span>{el.address.city}</p>
                                 </div>
                             </div>
 

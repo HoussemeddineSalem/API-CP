@@ -29,3 +29,7 @@
 .list_adress__styling{
     text-align: right;
 }
+.prefix_styling{
+    color:black;
+    font-weight: bolder;
+}
